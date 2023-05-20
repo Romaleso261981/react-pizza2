@@ -10,15 +10,13 @@ function App() {
   return (
     <div className="wrapper">
       <Header />
-      <div className="wrapper__content">
-        <div className="content">
-          <div className="container">
-            <div className="content__top">
-              <Catigories />
-              <Sort />
-            </div>
-            <CardList data={data} />
+      <div className="content">
+        <div className="container">
+          <div className="content__top">
+            <Catigories />
+            <Sort />
           </div>
+          <CardList data={data} />
         </div>
       </div>
     </div>
