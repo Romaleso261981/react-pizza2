@@ -4,7 +4,7 @@ import "./cardList.scss";
 
 function CardList({ data }) {
   return (
-    <div>
+    <div className="pizzaItems">
       <PizzaTitle content="Всі піцци" />
       <div className="content__items">
         {data &&

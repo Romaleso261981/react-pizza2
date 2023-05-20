@@ -3,43 +3,50 @@
 
 @import '../../../scss/components/all.scss';
 
-body {
-  background-color: $background;
-}
 
 
-.content {
-  padding: 40px 0;
-
-  &__title {
-    margin: 35px 0;
-  }
-
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.pizza-block{
+  &__description{
+    padding: 20px 0px;
+    padding-right: 0;
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+    min-height: 300px;
   }
 }
+// .content {
+//   padding: 40px 0;
 
-.container {
-  width: $container-width;
-  margin: 0 auto;
+//   &__title {
+//     margin: 35px 0;
+//   }
 
-  &--cart {
-    max-width: 820px;
-    margin: 90px auto;
-    .content__title {
-      margin: 0;
-    }
-  }
-}
+//   &__items {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//   }
+
+//   &__top {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+// }
+
+// .container {
+//   width: $container-width;
+//   margin: 0 auto;
+
+//   &--cart {
+//     max-width: 820px;
+//     margin: 90px auto;
+//     .content__title {
+//       margin: 0;
+//     }
+//   }
+// }
 
 .cart {
   &__top {

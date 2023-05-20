@@ -11,8 +11,9 @@ function PizzaItem({ title, url, description, status,size, cost, type }) {
         <div className="pizza-block__selector">
           <ul>
             <li className="type">{type}</li>
-            <li>{description}</li>
+            <li>{status}</li>
           </ul>
+          <div className="pizza-block__description">{description}</div>
           <ul>
             <li className="active">{size} см.</li>
             <li>30 см.</li>
