@@ -1,21 +1,24 @@
-import "./App.css";
+import "./App.scss";
 import "./scss/app.scss";
 import Header from "./components/Header/Header";
 import Catigories from "./components/Catigories/Catigories";
 import Sort from "./components/Sort/Sort";
 import CardList from "./components/CardList/CardList";
+import data from "./data/data.json";
 
 function App() {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <Header />
-      <div class="content">
-        <div class="container">
-          <div class="content__top">
-            <Catigories />
-            <Sort />
+      <div className="wrapper__content">
+        <div className="content">
+          <div className="container">
+            <div className="content__top">
+              <Catigories />
+              <Sort />
+            </div>
+            <CardList data={data} />
           </div>
-          <CardList />
         </div>
       </div>
     </div>

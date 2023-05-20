@@ -1,93 +1,100 @@
 [
   {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Римская пицца",
     "cost": "від 395 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
+    "_id": 1,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Кальцоне",
     "cost": "від 395 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "_id": 2,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Неаполитанская пицца",
+    "cost": "від 354 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "_id": 3,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Пицца в нарезке",
+    "cost": "від 315 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "_id": 4,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Сицилийская пицца",
+    "cost": "від 328 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "_id": 5,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Жареная пицца",
+    "cost": "від 895 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "_id": 6,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Пицца в сковороде",
+    "cost": "від 695 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "_id": 7,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Метровая пицца",
+    "cost": "від 185 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "_id": 8,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
     "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "cost": "від 685 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "_id": 9,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Метровая пицца",
+    "cost": "від 255 грн",
+    "type": "",
+    "_id": 10,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
     "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "cost": "від 1258 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
+    "_id": 11,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
+  },{
+    "url": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Метровая пицца",
+    "cost": "від 358 грн",
     "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
-    "type": "",
-    "status": "active"
-  },
-  {
-    "img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Dodopizza",
-    "cost": "від 395 грн",
-    "type": "",
-    "status": "active"
+    "_id": 12,
+    "status": "active",
+    "description": "Дуже смачна і недорога піцца"
   }
+  
 ]
