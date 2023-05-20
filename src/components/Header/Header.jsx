@@ -1,20 +1,16 @@
-import logo from "../../assets/pizza-logo.svg";
-import Button from "../Button/Button";
+import logo from "../../assets/logo.png";
 import "./header.scss";
 
 function Header() {
   return (
-    <div className="header">
-      <div className="container">
+    <div className="container">
+      <div className="header">
         <div className="header__logo">
-          <img width="38" src={logo} alt="Pizza logo" />
-          <div>
-            <h1>React Pizza</h1>
-            <p>самая вкусная пицца во вселенной</p>
-          </div>
+          <img className="header__logo-img" src={logo} alt="Pizza logo" />
         </div>
-        <div className="header__cart">
-          <Button />
+        <div className="header__content">
+          <h1 className="header__content-title">React Pizza</h1>
+          <p className="header__content-text">самая вкусная пицца во вселенной</p>
         </div>
       </div>
     </div>

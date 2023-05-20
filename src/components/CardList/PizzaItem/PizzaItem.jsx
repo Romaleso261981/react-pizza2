@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./pizzaItem.scss";
 
-function PizzaItem({ title, url, description, status, cost, type }) {
+function PizzaItem({ title, url, description, status,size, cost, type }) {
+  const [PizzaCount, setCount] = useState(0);
   return (
     <>
       <div className="pizza-block">
@@ -8,18 +10,23 @@ function PizzaItem({ title, url, description, status, cost, type }) {
         <h4 className="pizza-block__title">{title}</h4>
         <div className="pizza-block__selector">
           <ul>
-            <li className="active">{type}</li>
+            <li className="type">{type}</li>
             <li>{description}</li>
           </ul>
           <ul>
-            <li className="active">26 см.</li>
+            <li className="active">{size} см.</li>
             <li>30 см.</li>
             <li>40 см.</li>
           </ul>
         </div>
         <div className="pizza-block__bottom">
-          <div className="pizza-block__price">{cost}</div>
-          <div className="button button--outline button--add">
+          <div className="pizza-block__price">від {cost} грн</div>
+          <div
+            className="button button--outline button--add"
+            onClick={() => {
+              setCount(PizzaCount + 1);
+            }}
+          >
             <svg
               width="12"
               height="12"
@@ -33,7 +40,7 @@ function PizzaItem({ title, url, description, status, cost, type }) {
               />
             </svg>
             <span>Добавить</span>
-            <i>2</i>
+            <i>{PizzaCount}</i>
           </div>
         </div>
       </div>
@@ -41,5 +48,4 @@ function PizzaItem({ title, url, description, status, cost, type }) {
   );
 }
 
-// .sort((a, b) => (a.date > b.date ? -1 : 1))
 export default PizzaItem;

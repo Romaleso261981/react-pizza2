@@ -8,17 +8,22 @@ function CardList({ data }) {
       <PizzaTitle content="Всі піцци" />
       <div className="content__items">
         {data &&
-          data.map(({ title, url, description, status, cost, _id, type }) => (
-            <PizzaItem
-              key={_id}
-              title={title}
-              url={url}
-              description={description}
-              status={status}
-              cost={cost}
-              type={type}
-            />
-          ))}
+          data
+            .sort((a, b) => (a.cost > b.cost ? 1 : -1))
+            .map(
+              ({ title, url, description, status, cost, _id, type, size }) => (
+                <PizzaItem
+                  key={_id}
+                  title={title}
+                  url={url}
+                  description={description}
+                  status={status}
+                  cost={cost}
+                  type={type}
+                  size={size}
+                />
+              )
+            )}
       </div>
     </div>
   );
