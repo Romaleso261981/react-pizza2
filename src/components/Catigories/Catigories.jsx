@@ -10,18 +10,20 @@ const category = [
   "Закрытые",
 ];
 
-function Catigories() {
+function Catigories({ setCategory }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const onClickCategory = (index) => {
     setActiveIndex(index);
+    setCategory(category[index]);
   };
 
   return (
     <div className="categories">
       <ul>
         {category.map((item, i) => (
-          <li key={i}
+          <li
+            key={i}
             onClick={() => {
               onClickCategory(i);
             }}

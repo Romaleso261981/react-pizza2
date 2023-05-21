@@ -4,14 +4,15 @@ import "./sort.scss";
 const sort = ["популярности", "цене", "алфавиту"];
 
 
-function Sort() {
+function Sort({ setSorting }) {
   const [isShow, setIsShow] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const fu = (i) => {
     setActiveIndex(i);
     setIsShow(!isShow);
-  }
+    setSorting(sort[i]);
+  };
   return (
     <>
       <div className="sort">

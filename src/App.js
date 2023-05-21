@@ -11,21 +11,12 @@ import CardList from "./components/CardList/CardList";
 
 function App() {
   const [data, setData] = useState([]);
+  const [category, setCategory] = useState("");
+  const [sorting, setSorting] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  //  const fetchOrdersByCategory = createAsyncThunk(
-  //    "pizzas/fetchByCategory",
-  //    async (category, thunkAPI) => {
-  //      try {
-  //         console.log("result");
-  //        const result = await API.get();
-  //        console.log(result);
-  //        setData(result);
-  //        // return result.data.data.userWithPet;
-  //      } catch (error) {
-  //        return thunkAPI.rejectWithValue(error.message);
-  //      }
-  //    }
-  //   );
+  console.log(category);
+  console.log(sorting);
 
   useEffect(() => {
     fetch("https://637c7e5a16c1b892ebb51407.mockapi.io/api/pizass")
@@ -34,6 +25,7 @@ function App() {
       })
       .then((json) => {
         setData(json);
+        setLoading(true);
       });
     // eslint-disable-next-line
   }, []);
@@ -42,7 +34,6 @@ function App() {
     console.log(data);
     return;
   }
-   console.log(data);
 
   return (
     <div className="wrapper">
@@ -50,10 +41,10 @@ function App() {
       <div className="content">
         <div className="container">
           <div className="content__top">
-            <Catigories />
-            <Sort />
+            <Catigories setCategory={setCategory} />
+            <Sort setSorting={setSorting} />
           </div>
-          <CardList data={data} />
+          {loading ? <CardList data={data} /> : <h1>Loading.......</h1>}
         </div>
       </div>
     </div>
