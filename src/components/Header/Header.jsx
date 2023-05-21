@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png";
+import logo from "../../assets/img/pizza-logo.svg";
 import "./header.scss";
 
 function Header() {
