@@ -1,10 +1,12 @@
-@import '../../scss/variables';
+@import "../../scss/variables";
 
 .sort {
   position: relative;
   &__label {
     display: flex;
     align-items: center;
+    min-width: 270px;
+    text-decoration: none;
 
     svg {
       margin-right: 8px;
@@ -17,6 +19,7 @@
     span {
       color: $orange;
       border-bottom: 1px dashed $orange;
+      margin-left: 10px;
       cursor: pointer;
     }
   }

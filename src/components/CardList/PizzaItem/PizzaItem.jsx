@@ -1,8 +1,17 @@
 import { useState } from "react";
 import "./pizzaItem.scss";
 
-function PizzaItem({ title, url, description, status,size, cost, type }) {
+const typeNames = ["Тонке", "Традиційне"];
+
+function PizzaItem({ title, url, description, status, sizes, price, types }) {
   const [PizzaCount, setCount] = useState(0);
+  const [activeSize, setActiveIndex] = useState(0);
+  const [activeType, setActiveType] = useState(0);
+
+  const fu = (i) => {
+    setActiveIndex(i);
+  };
+
   return (
     <>
       <div className="pizza-block">
@@ -10,18 +19,35 @@ function PizzaItem({ title, url, description, status,size, cost, type }) {
         <h4 className="pizza-block__title">{title}</h4>
         <div className="pizza-block__selector">
           <ul>
-            <li className="type">{type}</li>
-            <li>{status}</li>
+            {types.map((item) => (
+              <li
+                onClick={() => {
+                  setActiveType(item);
+                }}
+                key={item}
+                className={activeType === item ? "active" : ""}
+              >
+                {typeNames[item]}
+              </li>
+            ))}
           </ul>
           <div className="pizza-block__description">{description}</div>
           <ul>
-            <li className="active">{size} см.</li>
-            <li>30 см.</li>
-            <li>40 см.</li>
+            {sizes.map((item, i) => (
+              <li
+                key={i}
+                onClick={() => {
+                  fu(i);
+                }}
+                className={activeSize === i ? "active" : ""}
+              >
+                {item} см.
+              </li>
+            ))}
           </ul>
         </div>
         <div className="pizza-block__bottom">
-          <div className="pizza-block__price">від {cost} грн</div>
+          <div className="pizza-block__price">від {price} грн</div>
           <div
             className="button button--outline button--add"
             onClick={() => {

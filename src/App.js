@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Catigories from "./components/Catigories/Catigories";
 import Sort from "./components/Sort/Sort";
 import CardList from "./components/CardList/CardList";
-import data from "./data/data.json";
+import data from "./assets/data/pizza.json";
 
 function App() {
   return (

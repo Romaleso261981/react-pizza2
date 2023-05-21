@@ -1,10 +1,17 @@
 import { useState } from "react";
 import "./sort.scss";
 
-// const sort = ["популярности", "цене", "алфавиту"];
+const sort = ["популярности", "цене", "алфавиту"];
+
 
 function Sort() {
   const [isShow, setIsShow] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const fu = (i) => {
+    setActiveIndex(i);
+    setIsShow(!isShow);
+  }
   return (
     <>
       <div className="sort">
@@ -24,17 +31,25 @@ function Sort() {
           <b>Сортировка по:</b>
           <span
             onClick={() => {
-              setIsShow(true);
+              setIsShow(!isShow);
             }}
           >
-            популярности
+            {sort[activeIndex]}
           </span>
           {isShow && (
             <div className="sort__popup">
               <ul>
-                <li className="active">популярности</li>
-                <li>цене</li>
-                <li>алфавиту</li>
+                {sort.map((item, i) => (
+                  <li
+                    key={i}
+                    className={activeIndex === i ? "active" : ""}
+                    onClick={() => {
+                      fu(i);
+                    }}
+                  >
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
           )}

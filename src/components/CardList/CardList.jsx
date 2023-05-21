@@ -3,6 +3,7 @@ import PizzaItem from "./PizzaItem/PizzaItem";
 import "./cardList.scss";
 
 function CardList({ data }) {
+  console.log(data);
   return (
     <div className="pizzaItems">
       <PizzaTitle content="Всі піцци" />
@@ -11,16 +12,25 @@ function CardList({ data }) {
           data
             .sort((a, b) => (a.cost > b.cost ? 1 : -1))
             .map(
-              ({ title, url, description, status, cost, _id, type, size }) => (
+              ({
+                title,
+                imageUrl,
+                description,
+                status,
+                price,
+                id,
+                types,
+                sizes,
+              }) => (
                 <PizzaItem
-                  key={_id}
+                  key={id}
                   title={title}
-                  url={url}
+                  url={imageUrl}
                   description={description}
                   status={status}
-                  cost={cost}
-                  type={type}
-                  size={size}
+                  price={price}
+                  types={types}
+                  sizes={sizes}
                 />
               )
             )}
