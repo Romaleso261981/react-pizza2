@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./sort.scss";
 
-const sort = ["популярности", "цене", "алфавиту"];
+// const sort = ["популярности", "цене", "алфавиту"];
 
 function Sort() {
   const [isShow, setIsShow] = useState(false);
