@@ -27,7 +27,14 @@
     font-weight: 800;
   }
   &__content-text {
+    display: block;
     color: #7b7b7b;
     font-style: 45px;
   }
-}
+@media (min-width: 320px) {
+  &__content-text {
+      display: none;
+    }
+  }
+ }
+  
