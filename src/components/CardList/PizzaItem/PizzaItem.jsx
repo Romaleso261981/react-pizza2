@@ -3,7 +3,15 @@ import "./pizzaItem.scss";
 
 const typeNames = ["Тонке", "Традиційне"];
 
-function PizzaItem({ title, url, description, status, sizes, price, types }) {
+function PizzaItem({
+  title,
+  imageUrl,
+  description,
+  status,
+  sizes,
+  price,
+  types,
+}) {
   const [PizzaCount, setCount] = useState(0);
   const [activeSize, setActiveIndex] = useState(0);
   const [activeType, setActiveType] = useState(0);
@@ -15,7 +23,7 @@ function PizzaItem({ title, url, description, status, sizes, price, types }) {
   return (
     <>
       <div className="pizza-block">
-        <img className="pizza-block__image" src={url} alt="Pizza" />
+        <img className="pizza-block__image" src={imageUrl} alt="Pizza" />
         <h4 className="pizza-block__title">{title}</h4>
         <div className="pizza-block__selector">
           <ul>
