@@ -5,7 +5,7 @@ import CardList from "./components/CardList/CardList";
 import Loader from "./components/Loader/Loader";
 import "./HomePage.scss";
 
-function App({ setCategory, setSorting, loading, data }) {
+function HomePage({ setCategory, setSorting, loading, data }) {
   return (
     <div className="wrapper">
       <Header />
@@ -27,4 +27,4 @@ function App({ setCategory, setSorting, loading, data }) {
   );
 }
 
-export default App;
+export default HomePage;
