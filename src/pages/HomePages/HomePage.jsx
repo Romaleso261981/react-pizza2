@@ -1,8 +1,9 @@
-import Header from "./components/Header/Header";
-import Catigories from "./components/Catigories/Catigories";
-import Sort from "./components/Sort/Sort";
-import CardList from "./components/CardList/CardList";
-import Loader from "./components/Loader/Loader";
+import Header from "../../components/Header/Header";
+import Catigories from "../../components/Catigories/Catigories";
+import Sort from "../../components/Sort/Sort";
+import CardList from "../../components/CardList/CardList";
+import Loader from "../../components/Loader/Loader";
+import PizzaTitle from "../../components/MainTitle/MainTitle";
 import "./HomePage.scss";
 
 function HomePage({ setCategory, setSorting, loading, data }) {
@@ -19,6 +20,7 @@ function HomePage({ setCategory, setSorting, loading, data }) {
               sort={["популярностю", "ціною", "алфавітом"]}
             />
           </div>
+          <PizzaTitle content="Сама найкраща піцца"/>
           {!loading && <Loader />}
           {loading && <CardList data={data} />}
         </div>

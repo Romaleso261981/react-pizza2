@@ -2,9 +2,8 @@ import "./App.scss";
 import "./scss/app.scss";
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage"
+import HomePage from "./pages/HomePages/HomePage";
 import NotFound from "./pages/NotFound/NotFound";
-
 
 function App() {
   const [data, setData] = useState([]);

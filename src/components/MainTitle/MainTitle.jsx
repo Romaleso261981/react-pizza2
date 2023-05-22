@@ -1,4 +1,4 @@
-import "./PizzaTitle.scss";
+import "./MainTitle.scss";
 
 function PizzaTitle({ content }) {
   return (
