@@ -8,7 +8,7 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import Cart from "./pages/Cart/Cart";
 import FullPizza from "./pages/FullPizza/FullPizza";
-import MainLayout from "./pages/MainLayout/MainLayout";
+// import MainLayout from "./pages/MainLayout/MainLayout";
 
 function App() {
   const [data, setData] = useState([]);
@@ -36,9 +36,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route
-          index="home"
+       <Route
+          path="/home"
           element={
             <HomePage
               setCategory={setCategory}
@@ -48,14 +47,19 @@ function App() {
             />
           }
         />
-        <Route path="cart" element={<Cart />} />
-        <Route path="pizza/:id" element={<FullPizza />} />
-        <Route path="register" element={<RegisterPage />} />
-        <Route path="login" element={<LoginPage />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/pizza/:id" element={<FullPizza />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
-      </Route>
+     
     </Routes>
   );
 }
 
 export default App;
+ 
+    // <Route path="/" element={<MainLayout />}> 
+
+    // </Route>
+ 

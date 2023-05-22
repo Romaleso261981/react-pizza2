@@ -1,4 +1,5 @@
 import logo from "../../assets/img/pizza-logo.svg";
+
 import "./header.scss";
 
 function Header() {
