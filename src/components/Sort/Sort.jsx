@@ -1,10 +1,8 @@
 import { useState } from "react";
 import "./sort.scss";
 
-const sort = ["популярностю", "ціною", "алфавітом"];
 
-
-function Sort({ setSorting }) {
+function Sort({ setSorting, title, sort }) {
   const [isShow, setIsShow] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -29,7 +27,7 @@ function Sort({ setSorting }) {
               fill="#2C2C2C"
             />
           </svg>
-          <b>Сортування за:</b>
+          <b>{title}:</b>
           <span
             onClick={() => {
               setIsShow(!isShow);

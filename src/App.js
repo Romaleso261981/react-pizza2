@@ -42,7 +42,11 @@ function App() {
         <div className="container">
           <div className="content__top">
             <Catigories setCategory={setCategory} />
-            <Sort setSorting={setSorting} />
+            <Sort
+              setSorting={setSorting}
+              title={"Сортування за"}
+              sort={["популярностю", "ціною", "алфавітом"]}
+            />
           </div>
           {loading ? <CardList data={data} /> : <h1>Loading.......</h1>}
         </div>

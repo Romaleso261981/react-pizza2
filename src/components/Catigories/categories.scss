@@ -2,7 +2,7 @@
 
 .categories {
   &__list {
-    display: block;
+    display: flex;
 
     li {
       background-color: #f9f9f9;
@@ -21,17 +21,25 @@
       &:active {
         background-color: darken(#f9f9f9, 5%);
       }
-
       &.active {
-        background-color: #282828;
-        color: #fff;
+        background-color: #f3f8f3;
+        color: #080808;
+        border: 1px solid rgb(195, 0, 255);
       }
     }
   }
-  @media (min-width: 1080px) {
+  @media (max-width: 1080px) {
     .categories {
       &__list {
-        display: flex;
+        display: block;
+        li {
+          margin-bottom: 10px;
+          transition: background-color 0.1s ease-in-out;
+        }
+        .active {
+          background-color: #971414;
+          color: #fff;
+        }
       }
     }
   }
