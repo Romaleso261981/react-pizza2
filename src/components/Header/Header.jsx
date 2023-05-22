@@ -5,7 +5,7 @@ import "./header.scss";
 function Header() {
   return (
     <div className="header">
-      <a href="/">
+      <a href="/home">
         <div className="header__logo">
           <img className="header__logo-img" src={logo} alt="Pizza logo" />
         </div>
