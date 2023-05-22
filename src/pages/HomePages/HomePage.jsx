@@ -1,4 +1,3 @@
-import Header from "../../components/Header/Header";
 import Catigories from "../../components/Catigories/Catigories";
 import Sort from "../../components/Sort/Sort";
 import CardList from "../../components/CardList/CardList";
@@ -8,8 +7,8 @@ import "./HomePage.scss";
 
 function HomePage({ setCategory, setSorting, loading, data }) {
   return (
-    <div className="wrapper">
-      <Header />
+    <div className="container">
+      
       <div className="content">
         <div className="container">
           <div className="content__top">

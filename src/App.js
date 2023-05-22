@@ -6,11 +6,14 @@ import HomePage from "./pages/HomePages/HomePage";
 import NotFound from "./pages/NotFound/NotFound";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import Cart from "./pages/Cart/Cart";
+import FullPizza from "./pages/FullPizza/FullPizza";
+// import MainLayout from "./pages/MainLayout/MainLayout";
 
 function App() {
   const [data, setData] = useState([]);
-  const [category, setCategory] = useState("");
-  const [sorting, setSorting] = useState("");
+  const [category, setCategory] = useState("Всі");
+  const [sorting, setSorting] = useState("ціною");
   const [loading, setLoading] = useState(false);
 
   console.log(category);
@@ -43,10 +46,24 @@ function App() {
             data={data}
           />
         }
-      />
-      <Route path="register" element={<RegisterPage />} />
-      <Route path="login" element={<LoginPage />} />
-      <Route path="*" element={<NotFound />} />
+      >
+        <Route
+          path="home"
+          element={
+            <HomePage
+              setCategory={setCategory}
+              setSorting={setSorting}
+              loading={loading}
+              data={data}
+            />
+          }
+        />
+        <Route path="cart" element={<Cart />} />
+        <Route path="pizza/:id" element={<FullPizza />} />
+        <Route path="register" element={<RegisterPage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
     </Routes>
   );
 }
