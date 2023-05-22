@@ -7,7 +7,10 @@
     align-items: center;
     min-width: 270px;
     text-decoration: none;
+    &__popup{
 
+    }
+    
     svg {
       margin-right: 8px;
     }
@@ -51,6 +54,24 @@
           color: $orange;
         }
       }
+    }
+  }
+}
+@media (max-width: 1260px) {
+  .sort {
+    &__label {
+      display: block;
+    }
+    &__popup{
+      position: absolute;
+      left:-20px;
+      right: 0;
+      margin-left: 20px;
+    }
+    &____right{
+      padding: 40px;
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }

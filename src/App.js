@@ -4,6 +4,7 @@ import "./scss/app.scss";
 // import { createAsyncThunk } from "@reduxjs/toolkit";
 import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
+import Loader from "./components/Loader/Loader";
 import Catigories from "./components/Catigories/Catigories";
 import Sort from "./components/Sort/Sort";
 import CardList from "./components/CardList/CardList";
@@ -27,7 +28,6 @@ function App() {
         setData(json);
         setLoading(true);
       });
-    // eslint-disable-next-line
   }, []);
 
   if (!data) {
@@ -48,7 +48,8 @@ function App() {
               sort={["популярностю", "ціною", "алфавітом"]}
             />
           </div>
-          {loading ? <CardList data={data} /> : <h1>Loading.......</h1>}
+          {!loading && <Loader />}
+          {loading && <CardList data={data} />}
         </div>
       </div>
     </div>
