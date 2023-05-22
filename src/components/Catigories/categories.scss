@@ -1,8 +1,8 @@
-@import '../../scss/variables';
+@import "../../scss/variables";
 
 .categories {
-  ul {
-    display: flex;
+  &__list {
+    display: block;
 
     li {
       background-color: #f9f9f9;
@@ -12,7 +12,7 @@
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.1s ease-in-out;
-    //   @include noselect();
+      //   @include noselect();
 
       &:hover {
         background-color: darken(#f9f9f9, 2%);
@@ -25,6 +25,13 @@
       &.active {
         background-color: #282828;
         color: #fff;
+      }
+    }
+  }
+  @media (min-width: 1080px) {
+    .categories {
+      &__list {
+        display: flex;
       }
     }
   }

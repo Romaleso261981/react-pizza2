@@ -2,12 +2,12 @@ import { useState } from "react";
 import "./categories.scss";
 
 const category = [
-  "Все",
-  "Мясные",
-  "Вегетарианская",
+  "Всі",
+  "М'ясні",
+  "Вегетаріанські",
   "Гриль",
-  "Острые",
-  "Закрытые",
+  "Гострі",
+  "Закриті",
 ];
 
 function Catigories({ setCategory }) {
@@ -20,7 +20,7 @@ function Catigories({ setCategory }) {
 
   return (
     <div className="categories">
-      <ul>
+      <ul className="categories__list">
         {category.map((item, i) => (
           <li
             key={i}
