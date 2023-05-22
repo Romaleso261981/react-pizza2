@@ -1,12 +1,11 @@
-import PizzaTitle from "../PizzaTitle/PizzaTitle";
+
 import PizzaItem from "./PizzaItem/PizzaItem";
 import "./cardList.scss";
 
-function CardList({data}) {
-
+function CardList({ data, loading }) {
   return (
     <div className="pizzaItems">
-      <PizzaTitle content="Всі піцци" />
+      
       <div className="content__items">
         {data &&
           data

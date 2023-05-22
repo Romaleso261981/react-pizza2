@@ -1,14 +1,10 @@
 import "./App.scss";
 import "./scss/app.scss";
-// import { API } from "../../API";
-// import { createAsyncThunk } from "@reduxjs/toolkit";
 import { useEffect, useState } from "react";
-import Header from "./components/Header/Header";
-import Loader from "./components/Loader/Loader";
-import Catigories from "./components/Catigories/Catigories";
-import Sort from "./components/Sort/Sort";
-import CardList from "./components/CardList/CardList";
-// import data from "./assets/data/pizza.json";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage"
+import NotFound from "./pages/NotFound/NotFound";
+
 
 function App() {
   const [data, setData] = useState([]);
@@ -31,28 +27,24 @@ function App() {
   }, []);
 
   if (!data) {
-    console.log(data);
     return;
   }
 
   return (
-    <div className="wrapper">
-      <Header />
-      <div className="content">
-        <div className="container">
-          <div className="content__top">
-            <Catigories setCategory={setCategory} />
-            <Sort
-              setSorting={setSorting}
-              title={"Сортування за"}
-              sort={["популярностю", "ціною", "алфавітом"]}
-            />
-          </div>
-          {!loading && <Loader />}
-          {loading && <CardList data={data} />}
-        </div>
-      </div>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <HomePage
+            setCategory={setCategory}
+            setSorting={setSorting}
+            loading={loading}
+            data={data}
+          />
+        }
+      />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

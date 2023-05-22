@@ -20,6 +20,12 @@ code {
   border-radius: 10px;
   max-width: 1400px;
 }
+.content{
+
+  &__skeleton-container{
+margin-top: 40px;
+}
+}
 
 .App {
   text-align: center;
