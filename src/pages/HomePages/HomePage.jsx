@@ -7,22 +7,19 @@ import "./HomePage.scss";
 
 function HomePage({ setCategory, setSorting, loading, data }) {
   return (
-    <div className="container">
-      
-      <div className="content">
-        <div className="container">
-          <div className="content__top">
-            <Catigories setCategory={setCategory} />
-            <Sort
-              setSorting={setSorting}
-              title={"Сортування за"}
-              sort={["популярностю", "ціною", "алфавітом"]}
-            />
-          </div>
-          <PizzaTitle content="Сама найкраща піцца"/>
-          {!loading && <Loader />}
-          {loading && <CardList data={data} />}
+    <div className="content">
+      <div className="container">
+        <div className="content__top">
+          <Catigories setCategory={setCategory} />
+          <Sort
+            setSorting={setSorting}
+            title={"Сортування за"}
+            sort={["популярностю", "ціною", "алфавітом"]}
+          />
         </div>
+        <PizzaTitle content="Сама найкраща піцца" />
+        {!loading && <Loader />}
+        {loading && <CardList data={data} />}
       </div>
     </div>
   );

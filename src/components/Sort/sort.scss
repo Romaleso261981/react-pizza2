@@ -75,3 +75,11 @@
     }
   }
 }
+@media (max-width: 460px) {
+  .sort {
+    &__label {
+      display: none;
+    }
+   
+  }
+}
