@@ -8,7 +8,7 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import Cart from "./pages/Cart/Cart";
 import FullPizza from "./pages/FullPizza/FullPizza";
-// import MainLayout from "./pages/MainLayout/MainLayout";
+import MainLayout from "./pages/MainLayout/MainLayout";
 
 function App() {
   const [data, setData] = useState([]);
@@ -48,7 +48,7 @@ function App() {
         }
       >
         <Route
-          path="home"
+          path="/home"
           element={
             <HomePage
               setCategory={setCategory}
