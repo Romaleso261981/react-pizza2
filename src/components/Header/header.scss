@@ -26,12 +26,12 @@
     text-transform: uppercase;
     font-weight: 800;
   }
-  &__content-text {
+  &___content-text {
     display: block;
-    color: #7b7b7b;
+    color: #040000;
     font-style: 45px;
   }
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   &__content-text {
       display: none;
     }

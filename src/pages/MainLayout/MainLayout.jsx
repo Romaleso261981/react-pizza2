@@ -7,9 +7,7 @@ function Layout() {
     return (
       <>
         <Container>
-          <div className="Layout__container">
-            <Header />
-          </div>
+          <Header />
         </Container>
       </>
     );

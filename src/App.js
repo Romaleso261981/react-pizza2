@@ -36,19 +36,9 @@ function App() {
 
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <HomePage
-            setCategory={setCategory}
-            setSorting={setSorting}
-            loading={loading}
-            data={data}
-          />
-        }
-      >
+      <Route path="/" element={<MainLayout />}>
         <Route
-          path="/home"
+          index="home"
           element={
             <HomePage
               setCategory={setCategory}
