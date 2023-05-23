@@ -37,7 +37,7 @@ function App() {
   return (
     <Routes>
        <Route
-          path="/home"
+          path="/"
           element={
             <HomePage
               setCategory={setCategory}
