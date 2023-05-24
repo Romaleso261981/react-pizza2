@@ -10,9 +10,9 @@ const rootElem = document.getElementById('root');
 
 if (rootElem) {
   const root = ReactDOM.createRoot(rootElem);
-
+// basename="/polite-mermaid-f255d3.netlify.app"
   root.render(
-    <BrowserRouter basename="/polite-mermaid-f255d3.netlify.app">
+    <BrowserRouter >
       <App />
     </BrowserRouter>
   );

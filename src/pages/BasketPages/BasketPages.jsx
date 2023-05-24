@@ -1,7 +1,7 @@
 import Header from "../../components/Header/Header";
 import Container from "../../components/Container/Container";
 
-import "./BasketPages.scss";
+import "./BasketPages.module.scss";
 
 function BasketPages() {
   return (

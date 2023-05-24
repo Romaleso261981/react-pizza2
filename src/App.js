@@ -8,6 +8,7 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import Cart from "./pages/Cart/Cart";
 import FullPizza from "./pages/FullPizza/FullPizza";
+import BasketPages from "./pages/BasketPages/BasketPages";
 // import MainLayout from "./pages/MainLayout/MainLayout";
 
 function App() {
@@ -36,23 +37,23 @@ function App() {
 
   return (
     <Routes>
-       <Route
-          path="/"
-          element={
-            <HomePage
-              setCategory={setCategory}
-              setSorting={setSorting}
-              loading={loading}
-              data={data}
-            />
-          }
-        />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/pizza/:id" element={<FullPizza />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="*" element={<NotFound />} />
-     
+      <Route
+        path="/"
+        element={
+          <HomePage
+            setCategory={setCategory}
+            setSorting={setSorting}
+            loading={loading}
+            data={data}
+          />
+        }
+      />
+      <Route path="cart/" element={<Cart />} />
+      <Route path="full-pizza/:id" element={<FullPizza />} />
+      <Route path="basket" element={<BasketPages />} />
+      <Route path="register/" element={<RegisterPage />} />
+      <Route path="login/" element={<LoginPage />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

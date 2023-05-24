@@ -7,10 +7,10 @@ function Navigation() {
       <Link to="basket" className="navigation__link">
         Basked
       </Link>
-      <Link to="card" className="navigation__link">
+      <Link to="cart" className="navigation__link">
         Card
       </Link>
-      <Link to="fullPizza" className="navigation__link">
+      <Link to="full-pizza/1" className="navigation__link">
         FullPizza
       </Link>
       <Link to="login" className="navigation__link">
