@@ -9,7 +9,8 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import Cart from "./pages/Cart/Cart";
 import FullPizza from "./pages/FullPizza/FullPizza";
 import BasketPages from "./pages/BasketPages/BasketPages";
-// import MainLayout from "./pages/MainLayout/MainLayout";
+import MainLayout from "./pages/MainLayout/MainLayout";
+
 
 function App() {
   const [data, setData] = useState([]);
@@ -37,8 +38,9 @@ function App() {
 
   return (
     <Routes>
+      <Route path="/" element={<MainLayout />} />
       <Route
-        path="/"
+        index="/"
         element={
           <HomePage
             setCategory={setCategory}
@@ -59,8 +61,5 @@ function App() {
 }
 
 export default App;
- 
-    // <Route path="/" element={<MainLayout />}> 
 
-    // </Route>
  

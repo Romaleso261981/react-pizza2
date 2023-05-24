@@ -1,16 +1,17 @@
+import React from "react";
+import { Outlet } from "react-router-dom";
+
 import Header from "../../components/Header/Header";
-import Container from "../../components/Container/Container";
 
-import "./MainLayout.scss";
+const MainLayout=() => {
+  return (
+    <div className="wrapper">
+      <Header />
+      <div className="content">
+        <Outlet />
+      </div>
+    </div>
+  );
+};
 
-function Layout() {
-    return (
-      <>
-        <Container>
-          <Header />
-        </Container>
-      </>
-    );
-}
-
-export default Layout;
+export default MainLayout;

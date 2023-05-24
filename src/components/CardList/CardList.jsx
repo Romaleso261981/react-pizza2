@@ -2,7 +2,7 @@
 import PizzaItem from "./PizzaItem/PizzaItem";
 import "./cardList.scss";
 
-function CardList({ data, loading }) {
+function CardList({ data }) {
   return (
     <div className="pizzaItems">
       
