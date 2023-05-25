@@ -10,7 +10,6 @@ import "./HomePage.scss";
 function HomePage({ setCategory, setSorting, loading, data }) {
   return (
     <Container>
-      <Header />
       <div className="content">
         <div className="content__top">
           <Catigories setCategory={setCategory} />
