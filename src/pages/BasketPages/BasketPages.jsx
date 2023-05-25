@@ -30,7 +30,7 @@ function BasketPages() {
   }, 0);
 
   const onClickClear = () => {
-    if (window.confirm("Очистить корзину?")) {
+    if (window.confirm("Очистити корзину?")) {
       // dispatch(clearItems());
       console.log("dispatch(clearItems())");
     }
@@ -155,10 +155,10 @@ function BasketPages() {
                 ></path>
               </svg>
 
-              <span>Вернуться назад</span>
+              <span>Повернутись назад</span>
             </Link>
             <div className="button pay-btn">
-              <span>Оплатить сейчас</span>
+              <span>Оплатити зараз</span>
             </div>
           </div>
         </div>
